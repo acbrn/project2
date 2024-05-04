@@ -1,0 +1,16 @@
+.port-nav-links {
+  /* Styles for the menu links container */
+}
+
+.port-nav-links a {
+  /* Styles for the menu links */
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.port-nav-links a:hover {
+  /* Styles for the menu links on hover */
+  color: #007bff;
+}
