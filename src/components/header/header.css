@@ -1,4 +1,5 @@
 .header-title {
+  font-family: "Poppins", sans-serif;
   font-size: 5rem;
   color: #000;
   margin: 5px;
@@ -11,15 +12,12 @@
 }
 
 .slide-in {
-  opacity: 1; /* Slide the title in by changing opacity */
+  opacity: 1;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  color: var(--primary-color);
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .header-logo {
@@ -30,8 +28,16 @@
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+}
+.header-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  text-align: start;
+  border-bottom: 2px solid white;
+  border-radius: 8px;
+  width: 82%;
 }
 
 .logo-scale {
@@ -39,5 +45,13 @@ img {
 }
 
 .logo-scale:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--primary-color);
 }

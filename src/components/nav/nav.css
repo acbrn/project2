@@ -1,14 +1,16 @@
 .nav-menu {
   display: flex;
   position: fixed;
-  width: 100%;
+  top: 10px;
   background-color: transparent;
   transition: background-color 0.3s cubic-bezier(0.82, -0.38, 0, 1.76);
+  width: 90%;
 }
 
 .nav-menu__links {
   list-style-type: none;
   display: flex;
+  width: 100%;
 }
 
 .nav-menu__links__link {
@@ -41,9 +43,11 @@
 }
 
 .nav-menu.scrolled {
+  top: 125px;
+  left: 0;
   background-color: var(--terdiary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 40%;
+  width: 90%;
 }
 .nav-menu.scrolled.active {
   background-color: var(--terdiary-color);

@@ -28,7 +28,7 @@ const Nav = () => {
 
             {/* Desktop menu */}
             <div className="nav-menu__links">
-                <NavItem href="#home" icon={faHouse} text="Home" />
+                <NavItem href="/" icon={faHouse} text="Home" />
                 <NavItem href="#projects" icon={faCode} text="Projects" />
                 <NavItem href="#about" icon={faCircleInfo} text="About" />
                 <NavItem href="#contact" icon={faDragon} text="Contact" />
