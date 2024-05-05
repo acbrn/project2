@@ -1,18 +1,13 @@
 .nav-menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: relative;
-}
-
-.nav-menu__hamburger {
-  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s cubic-bezier(0.82, -0.38, 0, 1.76);
 }
 
 .nav-menu__links {
   list-style-type: none;
-  width: 100%;
   display: flex;
 }
 
@@ -45,6 +40,16 @@
   left: 10px;
 }
 
+.nav-menu.scrolled {
+  background-color: var(--terdiary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40%;
+}
+.nav-menu.scrolled.active {
+  background-color: var(--terdiary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40%;
+}
 span {
   padding: 0;
   color: aliceblue;

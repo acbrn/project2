@@ -1,34 +1,36 @@
-// Code: Main App component
 import './App.css';
 import { Header, Footer, Nav } from './components';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Home, Projects, Contact, About } from './views';
 import { useEffect } from 'react';
 
 const App = () => {
   const ScrollToTop = () => {
-    const { pathname } = useLocation();
     useEffect(() => {
       window.scrollTo(0, 0);
-    }, [pathname]);
+    }, []);
     return null;
   }
 
   return (
-    <Router>
+    <div>
       <ScrollToTop />
       <Nav />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div id="home">
+        <Home />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <div id="about">
+        <About />
+      </div>
       <Footer />  
-    </Router>
+    </div>
   );
 }
-
 
 export default App;
