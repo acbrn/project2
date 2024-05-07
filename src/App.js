@@ -1,6 +1,6 @@
 import './App.css';
 import { Header, Footer, Nav } from './components';
-import { Home, Projects, Contact, About } from './views';
+import { Home, Projects, Contact } from './views';
 import { useEffect } from 'react';
 
 const App = () => {
@@ -24,9 +24,6 @@ const App = () => {
       </div>
       <div id="contact">
         <Contact />
-      </div>
-      <div id="about">
-        <About />
       </div>
       <Footer />  
     </div>

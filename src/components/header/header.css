@@ -6,7 +6,8 @@
   text-align: left;
   border-bottom: 5px var(--quad-color) solid;
   color: #ffffff;
-  width: 50%;
+  width: 100%;
+  text-align: center;
   margin: 5px;
   padding: 5px;
   position: relative;
@@ -39,7 +40,8 @@ img {
   font-size: x-large;
   text-align: start;
   border-bottom: 5px var(--quad-color) solid;
-  width: 82%;
+  width: 100%;
+  text-align: center;
 }
 
 .logo-scale {

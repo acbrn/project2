@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faCode, faCircleInfo, faDragon } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faCode, faDragon } from '@fortawesome/free-solid-svg-icons';
 import './nav.css';
 
 const Nav = () => {
@@ -30,7 +30,6 @@ const Nav = () => {
             <div className="nav-menu__links">
                 <NavItem href="/" icon={faHouse} text="Home" />
                 <NavItem href="#projects" icon={faCode} text="Projects" />
-                <NavItem href="#about" icon={faCircleInfo} text="About" />
                 <NavItem href="#contact" icon={faDragon} text="Contact" />
             </div>
         </div>

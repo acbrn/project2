@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import ice from '../../assets/IceIce1.png';
+
 import './home.css';
 
 const Home = () => {
@@ -33,25 +30,7 @@ const Home = () => {
                     I have experience with a variety of programming languages and frameworks, including
                     JavaScript, React, Node.js, Express, and MongoDB.
                     I am always eager to learn new technologies and expand my skill set.
-
                 </p>
-                <div className='home-social'>
-                    <a href='https://www.facebook.com/PhenyxShadow/' className='social-link'>
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                    <a href='https://github.com/acbrn' className='social-link'>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                    <a href='https://www.linkedin.com/in/andrew-coburn8' className='social-link'>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-                    <a href='mailto: coburn188@gmail.com' className='social-link'>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
-                </div>
-                <div className='home-image'>
-                    <img src={ice} alt='Ice' />
-                </div>
             </div>
         </div>
     );

@@ -1,5 +1,60 @@
+/* projects.css */
+
 .project-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  border-bottom: 5px var(--quad-color) solid;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
+  color: #ffffff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 20px;
+  margin: 3px;
+}
+
+.project-card {
+  padding: 1rem;
+  border: 5px solid var(--secondary-color);
+  border-radius: 25px;
+  box-shadow: 4px 4px 8px var(--quad-color);
+}
+.project-card.blur {
+  filter: blur(5px);
+}
+
+.cat-name-name {
+  font-size: xx-large;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
+  color: #ffffff;
+}
+
+.cat-name-descrip {
+  margin-top: 1rem;
+  font-size: larger;
+}
+
+.cat-name-link {
+  text-align: center;
+  color: #ffffff;
+  font-size: large;
+}
+
+.link-site,
+.link-github {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  border-bottom: 3px solid #020202;
+}
+
+.link-site:hover,
+.link-github:hover {
+  color: var(--secondary-color);
+}
+
+.link-github svg {
+  margin-right: 0.5rem;
 }

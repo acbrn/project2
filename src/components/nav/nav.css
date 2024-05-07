@@ -30,7 +30,7 @@
   color: var(--quad-color);
   border-left: 2px solid var(--quad-color);
   background-color: var(--primary-color);
-  box-shadow: var(--terdiary-color) 1px 4px 5px;
+  box-shadow: var(--quad-color) 1px 8px 5px;
   left: 10px;
 }
 
@@ -43,16 +43,16 @@
 }
 
 .nav-menu.scrolled {
-  top: 125px;
-  left: 0;
+  top: 100px;
+  left: 400px;
   background-color: var(--terdiary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 90%;
+  width: 100%;
 }
 .nav-menu.scrolled.active {
   background-color: var(--terdiary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 40%;
+  width: 100%;
 }
 span {
   padding: 0;
