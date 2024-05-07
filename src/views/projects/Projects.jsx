@@ -31,6 +31,9 @@ const Projects = (props) => {
                 <p className='cat-name-link'> Link: <a href='https://stewartstaxservices.netlify.app/'>
                     Stewart's Tax Service
                 </a>
+                    <p>
+                        <a className='link-github' href='https://github.com/acbrn/Project1/tree/main/my-new-pro'>Github Repo</a>
+                    </p>
                 </p>
                 <p>
                     Using Netlify for hosting, great service and it is free!
