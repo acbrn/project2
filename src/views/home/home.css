@@ -1,6 +1,7 @@
 /* home.css */
 
 .home-main {
+  padding: 2px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -8,6 +9,8 @@
 .home-title {
   font-size: 5rem;
   border-bottom: 5px var(--quad-color) solid;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
+  color: #ffffff;
 }
 
 .home-content {

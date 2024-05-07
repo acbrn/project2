@@ -27,7 +27,7 @@
 }
 
 .nav-menu__links__link:hover {
-  color: var(--terdiary-color);
+  color: var(--quad-color);
   border-left: 2px solid var(--quad-color);
   background-color: var(--primary-color);
   box-shadow: var(--terdiary-color) 1px 4px 5px;
@@ -58,6 +58,7 @@ span {
   padding: 0;
   color: aliceblue;
   display: flex;
+  text-shadow: black 0px 8px 10px;
   justify-content: center;
   width: 50%;
 }

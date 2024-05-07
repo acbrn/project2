@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Check if the user has scrolled down
-            if (window.scrollY > 375) {
+            if (window.scrollY > 300) {
                 setScrolling(true);
             } else {
                 setScrolling(false);
@@ -33,6 +33,7 @@ const Home = () => {
                     I have experience with a variety of programming languages and frameworks, including
                     JavaScript, React, Node.js, Express, and MongoDB.
                     I am always eager to learn new technologies and expand my skill set.
+
                 </p>
                 <div className='home-social'>
                     <a href='https://www.facebook.com/PhenyxShadow/' className='social-link'>

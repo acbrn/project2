@@ -1,11 +1,14 @@
 .header-title {
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
-  color: #000;
-  margin: 5px;
-  padding: 5px;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
   font-weight: 400;
   text-align: left;
+  border-bottom: 5px var(--quad-color) solid;
+  color: #ffffff;
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
   position: relative;
   opacity: 0;
   transition: opacity 3s ease;
@@ -35,8 +38,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-size: x-large;
   text-align: start;
-  border-bottom: 2px solid white;
-  border-radius: 8px;
+  border-bottom: 5px var(--quad-color) solid;
   width: 82%;
 }
 
