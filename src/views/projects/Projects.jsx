@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Interstellar from '../../assets/Interstellar.png'
+import Stewart from '../../assets/Stewart.png'
 import './projects.css'
 
 
@@ -12,9 +14,10 @@ const Projects = (props) => {
 
             cards.forEach(card => {
                 const cardTop = card.getBoundingClientRect().top + window.scrollY;
-                // const cardBottom = cardTop + card.clientHeight;
+                const cardBottom = cardTop + card.clientHeight; // Use clientHeight to determine the bottom of the card
 
-                if (cardTop > scrollPosition + window.innerHeight) {
+                // Check if the card is in or out of view
+                if (cardTop > scrollPosition + window.innerHeight || cardBottom < scrollPosition) {
                     card.classList.add('blur');
                 } else {
                     card.classList.remove('blur');
@@ -22,11 +25,15 @@ const Projects = (props) => {
             });
         };
 
+        // Attach scroll event listener when component mounts
         window.addEventListener('scroll', handleScroll);
+
+        // Remove scroll event listener when component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     return (
         <>
             <div className="project-title">
@@ -34,6 +41,11 @@ const Projects = (props) => {
             </div>
             <div className='project-grid'>
                 <div className="project-card">
+                    {/* Need a thumbnail of the site */}
+
+                    <a className='cat-name-img' href='https://interstellar-voyages.netlify.app/' target='_blank' rel='noopener noreferrer'>
+                        <img src={Interstellar} alt='Interstellar Voyages' />
+                    </a>
                     <p className='cat-name-name'> Interstellar  Voyages </p>
                     <p className='cat-name-descrip'> Description:   My first SPA!
                         I did this as a project for my Savvy Coders boot camp!
@@ -57,6 +69,9 @@ const Projects = (props) => {
                     </p>
                 </div>
                 <div className="project-card">
+                    <a className='cat-name-img' href="https://stewartstaxservices.netlify.app/ " target='_blank' rel='noopener noreferrer'>
+                        <img src={Stewart} alt="Stewart's Tax" />
+                    </a>
                     <p className='cat-name-name'> Stewart's Tax Service </p>
                     <p className='cat-name-descrip'> Description: Small business friend, wanted to have a mock-up of what I could provide.
                         I create the page based on their colors, images and information they supplied.

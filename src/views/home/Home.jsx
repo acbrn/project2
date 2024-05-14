@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Check if the user has scrolled down
-            if (window.scrollY > 300) {
+            if (window.scrollY > 350) {
                 setScrolling(true);
             } else {
                 setScrolling(false);

@@ -31,9 +31,6 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                 </div>
-                <div className='home-image'>
-                    <img src={ice} alt='Ice' />
-                </div>
             </div>
         </>
     )
