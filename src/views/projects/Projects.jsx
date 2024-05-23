@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Interstellar from '../../assets/Interstellar.png'
 import Stewart from '../../assets/Stewart.png'
+import Ecomart from '../../assets/ecostyle.png'
 import './projects.css'
 
 
@@ -91,7 +92,29 @@ const Projects = (props) => {
                         Using Netlify for hosting, great service and it is free!
                     </p>
                 </div>
+                <div className="project-card">
+                    <a className='cat-name-img' href="https://acbrn.github.io/Project1/" target='_blank' rel='noopener noreferrer'>
+                        <img src={Ecomart} alt="Placeholder" /> {/* Placeholder */}
+                    </a>
+                    <p className='cat-name-name'> Ecomart </p>
+                    <p className='cat-name-descrip'> Description: My first ecommerce site!
+                        This is a self-taught project using HTML, CSS, and JavaScript and React.
 
+                    </p>
+                    <p className='cat-name-link'>
+                        <a className='link-site' href='https://acbrn.github.io/Project1/'>
+                            Ecomart
+                        </a>
+                        <p>
+                            <a className='link-github' href='placeholder'>
+                                < FontAwesomeIcon icon={faGithub} />Github Repo
+                            </a>
+                        </p>
+                    </p>
+                    <p>
+                        Using GitHub Pages for hosting, great service and it is free!
+                    </p>
+                </div>
             </div>
         </>
     )
